@@ -1,0 +1,390 @@
+<html>
+  <html lang="en">
+    <head>
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <style>
+        .bgnav {
+          background-color: #1e202b;
+        }
+        .bg-black {
+          background-color: #1e202b !important;
+        }
+        .bg-sec {
+          background-color: #009ad8;
+        }
+        .bg-cont {
+          background-color: #1e2027;
+        }
+        .bg_wether
+        {
+          background-color: #323544;
+        }
+        .text-light {
+          color: #009ad8 !important ;
+        }
+        /* .logo-image
+        {
+          width: 100%;
+        } */
+        .logo-wether-two img
+        {
+          width: 15%;
+        }
+        .custom-text
+        {
+          color: #009ad8;
+          margin: 20px 0;
+        }
+
+        .bg-home {
+          background: url(img/banner.png);
+          background-position: center center;
+          background-size: cover;
+        }
+        .temp-num {
+          font-size: 100px;
+        }
+        .bg-title-wether
+        {
+          background-color: #1e202b;
+        }
+
+        #forecast
+        {
+          /* background-color: #1e202b; */
+        }
+    
+      </style>
+    </head>
+    <body class="bg-dark">
+      <!-- navbar  -->
+      <nav class="navbar navbar-expand-lg text-white bgnav py-4">
+        <div class="container py-1 text-white">
+          <img src="logo.png" class="pe-2" />
+          <a class="navbar-brand text-white" href="#">Weather</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >HOME</a
+                >
+              </li>
+
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-home">
+        <form class="d-flex justify-content-center py-5" role="search">
+          <input
+            class="form-control w-50 bg-black text-white"
+            type="search"
+            placeholder=" Find your location.."
+            aria-label="Search"
+            id="search"
+          />
+          <button
+            class="btn btn-outline-success text-white bg-sec"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+
+        <!-- weather diplaying  -->
+        <div class="container bg-cont">
+          <!-- weather card title  -->
+          <div class="row content-title pb-4 bg_wether  rounded-1" id="forecast">
+            <!-- <div class="col-4">
+              <div class="firstWether">
+                <div class="d-flex justify-content-between text-white py-1 ">
+                  <p class="text-white-50 fs-6">Wednesday</p>
+                  <p class="text-white-50 fs-6">22February</p>
+                </div>
+
+            
+                  <div class="location text-white-50 fs-6 p-2"></div>
+                  <div class="temperature d-flex">
+                    <div class="temp-num text-white fw-bold">
+                      <!-- <sup>o</sup>c -->
+                    <!-- </div>
+                    <div class="temp-logo p-4 m-3 logo-wether w-100">
+                      
+                    </div> -->
+                   
+                  <!-- </div>
+                  <div>
+                    <p class="custom-text"></p>
+                  </div> -->
+                  <div class="col-4 ">
+                    <div class="d-flex justify-content-between text-white py-1 ">
+                    <p class="text-white-50 fs-6">Wednesday</p>
+                    <p class="text-white-50 fs-6">22February</p>
+                  </div>
+
+                  <div class="me-5 " >
+                  <div class="location text-white-50 fs-6 p-2">Cairo</div>
+                  <div class="temperature d-flex">
+                    <div class="temp-num text-white fw-bold">
+                    25<sup>o</sup>c
+                    </div>
+                    <div class="temp-logo p-4 m-2 logo-wether w-100">
+                    <img src= "img/sunny.png" class=" logo-image img-fluid" />
+                    </div>
+                  </div>
+                  <div class="content-info ">
+                
+               
+                    <div class="d-flex text-white-50">
+                      <span class="px-3">
+                        <img src="img/icon-umberella.png">
+                        20%
+                      </span>
+                      <span class="px-3">
+                        <img src="img/icon-wind.png">
+                        18km/h
+                      </span>
+                      <span class="px-3">
+                        <img src="img/icon-compass.png">
+                        East
+                      </span>
+                      
+                    </div>
+                  </div>
+              
+        
+                  
+                  </div>
+                   
+                    </div>
+
+                    <div class="col-4">
+                      <!-- <div class="d-flex justify-content-between text-white py-1">
+                        <p>Wednesday</p>
+                        <p>22February</p>
+                      </div> -->
+                      <div class="content-info text-center">
+                        <div class="text-center text-white py-1">
+                          <p>Wednesday</p>
+                          
+                        </div>
+                        <div class="content-info text-center mt-3">
+                          <div class="second_wether">
+                            <div class=" img-fluid mb-4">
+                              <img src="img/sunny.png">
+            
+                            </div>
+                          <div class=" text-white fw-bolder fs-3">
+                           36.8<sup>o</sup>c 
+                          </div>
+          
+                          <div class=" text-white-50  fs-6 mb-3">
+                            16.9<sup>o</sup> 
+                           </div>
+                           <div>
+                            <p class="custom-text">Sunny</p>
+                          </div>
+        
+                        </div>
+        
+                     
+                     
+                      
+                      </div>
+                    </div>
+                    
+                    <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+               
+
+
+                </div> 
+
+
+                <div class="col-4">
+                  <div class="text-center text-white py-1">
+                    <p>Wednesday</p>
+                    
+                  </div>
+                  <div class="content-info text-center mt-3">
+                    <div class="third_wether">
+                      <div class=" img-fluid mb-4">
+                        <img src="img/sunny.png">
+      
+                      </div>
+                      <div class=" text-white fw-bolder fs-3">
+                       36.8<sup>o</sup>c 
+                      </div>
+      
+                      <div class=" text-white-50  fs-6 mb-3">
+                        16.9<sup>o</sup> 
+                       </div>
+                       <div>
+                        <p class="custom-text">Sunny</p>
+                      </div>
+    
+                    </div>
+                  </div>
+                </div>
+
+             
+             
+
+              <!-- weather info  -->
+          
+        
+           
+            <!--test-->
+
+     
+
+
+          <!-- <div class="row content-info">
+                  <div class="col-4">
+                    <div class="text-center text-white py-1">
+                      <p>Wednesday</p>
+                      <p>22February</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="text-center text-white py-1">
+                      <p>Wednesday</p>
+                      <p>22February</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="text-center text-white py-1">
+                      <p>Wednesday</p>
+                      <p>22February</p>
+                    </div>
+                  </div>
+                </div> -->
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <h1 id="demo" class="text-white"></h1> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- fotter section  -->
+      <section class="py-5">
+        <div class="bg-cont">
+          <div class="container py-5">
+            <div class="row">
+              <div class="d-flex justify-content-between">
+                <div class="col-9">
+                  <form class="d-flex justify-content-center" role="search">
+                    <input
+                      class="form-control w-50 bg-black text-white"
+                      type="search"
+                      placeholder=" Find your location.."
+                      aria-label="Search"
+                    />
+                    <button
+                      class="btn btn-outline-success text-white bg-sec"
+                      type="submit"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <div class="col-3">
+                  <div>
+                    <i class="fa-brands fa-facebook text-light me-2 fs-3"></i>
+                    <i class="fa-brands fa-twitter text-light me-2 fs-3"></i>
+                    <i
+                      class="fa-brands fa-google-plus-g text-light me-2 fs-3"
+                    ></i>
+                    <i
+                      class="fa-brands fa-pinterest-p text-light me-2 fs-3"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="text-white text-center">
+                Copyright 2014 Company name. Designed by Themezy. All rights
+                reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script
+        src="https://kit.fontawesome.com/46beff6e67.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="jquery-3.6.3.min.js"></script>
+      <script src="js/mine.js"></script>
+      <!-- </div> -->
+    </body>
+  </html>
+</html>
